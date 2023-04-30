@@ -29,7 +29,7 @@ main() {
 	# theme
 	local theme
 	local tmux_commands=()
-	source /dev/stdin <<< "$(sed -e "/^[^#].*=/s/^/local /" "${PLUGIN_DIR}/everblush-dark.tmuxtheme")"
+	source /dev/stdin <<<"$(sed -e "/^[^#].*=/s/^/local /" "${PLUGIN_DIR}/everblush-dark.tmuxtheme")"
 
 	# status
 	set status "on"
