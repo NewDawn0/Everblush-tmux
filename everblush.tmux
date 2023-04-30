@@ -28,7 +28,7 @@ setw() {
 main() {
 	# theme
 	local theme
-	theme="$(get_tmux_option "@everblush" "dark")"
+	theme="$(get_tmux_option "@everblush_theme" "dark")"
 	local tmux_commands=()
 	source /dev/stdin <<< "$(sed -e "/^[^#].*=/s/^/local /" "${PLUGIN_DIR}/everblush${theme}.tmuxtheme")"
 
